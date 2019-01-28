@@ -9,6 +9,7 @@ import {
   NavLink
 } from "reactstrap";
 
+import { Link, animateScroll as scroll } from "react-scroll";
 export default class AppNavbar extends Component {
   constructor(props) {
     super(props);
@@ -40,13 +41,13 @@ export default class AppNavbar extends Component {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#" className="px-4 navLink">
-                My Projects
-              </NavLink>
+              <Link to="projects" spy smooth>
+                <NavLink className="px-4 navLink">Projects</NavLink>
+              </Link>
             </NavItem>
             <NavItem>
               <NavLink href="#" className="px-4 navLink">
-                Contact Me
+                Contact
               </NavLink>
             </NavItem>
           </Nav>

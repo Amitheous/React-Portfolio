@@ -16,13 +16,13 @@
 .navLink {
   font-size: 1.2rem;
   font-weight: 400;
-  text-decoration: none;
-  color: var(--my-yellow);
+  color: var(--my-yellow) !important;
 }
 .navLink:hover {
-  color: #efefef;
+  color: #efefef !important;
   transition-duration: 400ms;
   text-shadow: 2px 2px #a9a9a9;
+  cursor: pointer;
 }
 
 .navbarToggler {
@@ -44,7 +44,7 @@
 
 .topBoxOther {
   height: 100vh;
-  background-image: url(../img/homepage/trees.jpeg) cover no-repeat;
+  background-image: url(../img/homepage/trees.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 40vh;
@@ -89,12 +89,32 @@
   background: url("https://www.w3schools.com/w3css/img_lights.jpg");
 }
 
+@media (max-width: 1166px) {
+  .topBoxContent {
+    width: 40vw;
+  }
+}
+
 @media (max-width: 991px) {
+  .topBoxContent {
+    width: 50vw;
+  }
   .projectRow {
     padding-top: 0;
   }
   .projectCard {
     width: 90% !important;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .topBoxContent {
+    width: 75vw;
+  }
+}
+@media (max-width: 468px) {
+  .topBoxContent {
+    width: 95vw;
   }
 }

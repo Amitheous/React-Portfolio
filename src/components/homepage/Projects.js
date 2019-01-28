@@ -13,7 +13,7 @@ import techtimeless from "../../img/homepage/techtimeless.png";
 export default class Projects extends Component {
   render() {
     return (
-      <div className="projects pb-5">
+      <div id="projects" className="projects pb-5">
         <header className="text-center pt-5 mb-1 pb-3 text-uppercase small">
           <h2>My Projects</h2>
         </header>
