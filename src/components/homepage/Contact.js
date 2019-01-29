@@ -16,7 +16,12 @@ export default class Contact extends Component {
 					className="py-4 col-10 col-md-6 col-lg-5 mx-auto border-primary"
 					id="formCard"
 				>
-					<Form id="form" name="contact" className="text-center py-3" netlify>
+					<Form
+						id="form"
+						name="contact"
+						className="text-center py-3"
+						data-netlify="true"
+					>
 						<FormGroup>
 							<Input
 								className="border-primary"

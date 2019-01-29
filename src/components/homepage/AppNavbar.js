@@ -5,8 +5,7 @@ import {
 	NavbarToggler,
 	Collapse,
 	Nav,
-	NavItem,
-	NavLink
+	NavItem
 } from "reactstrap";
 
 import { Link } from "react-scroll";
@@ -23,31 +22,51 @@ export default class AppNavbar extends Component {
 	render() {
 		return (
 			<Navbar className="navbar fixed-top" expand="md">
-				<NavbarBrand className="navbarBrand text-uppercase pl-5 ml-5">
+				<NavbarBrand className="navbarBrand text-uppercase">
 					Amitheous
 				</NavbarBrand>
 				<NavbarToggler onClick={this.toggle}>
-					<span className="navbarToggler navbar-toggler-icon">Menu</span>
+					<span className="navbarToggler navbar-toggler-icon border-0">
+						Menu
+					</span>
 				</NavbarToggler>
 				<Collapse
 					isOpen={this.state.collapse}
 					className="text-uppercase"
 					navbar
 				>
-					<Nav className="ml-auto mr-5 pr-5" navbar>
+					<Nav className="ml-auto" navbar>
 						<NavItem>
-							<Link to="topBox" duration={1400} spy smooth>
-								<NavLink className="px-4 navLink">Home</NavLink>
+							<Link
+								to="topBox"
+								duration={1400}
+								spy
+								smooth
+								onClick={this.state.collapse ? this.toggle : null}
+							>
+								<p className="pr-4 navItem float-right">Home</p>
 							</Link>
 						</NavItem>
 						<NavItem>
-							<Link to="projects" duration={1400} spy smooth>
-								<NavLink className="px-4 navLink">Projects</NavLink>
+							<Link
+								to="projects"
+								duration={1400}
+								spy
+								smooth
+								onClick={this.state.collapse ? this.toggle : null}
+							>
+								<p className="pr-4 navItem float-right">Projects</p>
 							</Link>
 						</NavItem>
 						<NavItem>
-							<Link to="contact" duration={1400} spy smooth>
-								<NavLink className="px-4 navLink">Contact</NavLink>
+							<Link
+								to="contact"
+								duration={1400}
+								spy
+								smooth
+								onClick={this.state.collapse ? this.toggle : null}
+							>
+								<p className="pr-4 navItem float-right">Contact</p>
 							</Link>
 						</NavItem>
 					</Nav>

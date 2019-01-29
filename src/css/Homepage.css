@@ -1,24 +1,34 @@
 :root {
-	--my-yellow: rgb(252, 184, 38);
+	--my-yellow: #fcb826;
 	--my-dark-yellow: rgb(245, 168, 3);
+}
+
+.App {
+	width: 100% !important;
+	overflow-x: hidden;
 }
 
 /* Navbar */
 .navbar {
 	background-color: #18121e7a;
+	padding: 0.5rem 0 !important;
 }
 .navbarBrand {
 	color: var(--my-yellow) !important;
 	font-weight: 600;
 	letter-spacing: 1px;
+	margin-left: 3rem;
 }
 
-.navLink {
+.navItem {
 	font-size: 1.2rem;
 	font-weight: 400;
+	margin-bottom: 0;
+	padding-top: 0;
+	line-height: 2.5;
 	color: var(--my-yellow) !important;
 }
-.navLink:hover {
+.navItem:hover {
 	color: #efefef !important;
 	transition-duration: 400ms;
 	text-shadow: 2px 2px #a9a9a9;
@@ -28,6 +38,13 @@
 .navbarToggler {
 	margin-right: 1rem;
 	color: var(--my-yellow);
+}
+
+.navbar-toggler:focus {
+	outline: none;
+}
+.navbar-toggler:active {
+	text-decoration: underline black solid;
 }
 
 /* TopBox */
@@ -106,7 +123,7 @@
 }
 
 .footer {
-	background: black;
+	background: rgb(27, 27, 27);
 }
 
 @media (max-width: 1166px) {
@@ -116,6 +133,11 @@
 }
 
 @media (max-width: 991px) {
+	.navbarBrand {
+		padding-left: 1rem !important;
+		margin-left: 0 !important;
+	}
+
 	.topBoxContent {
 		width: 50vw;
 	}
@@ -136,5 +158,8 @@
 @media (max-width: 468px) {
 	.topBoxContent {
 		width: 95vw;
+	}
+	.projectCard {
+		width: 97% !important;
 	}
 }
