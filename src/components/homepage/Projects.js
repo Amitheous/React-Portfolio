@@ -17,14 +17,12 @@ import splitChrome from "../../img/homepage/split.webp";
 import financeChrome from "../../img/homepage/finance.webp";
 import techtimelessChrome from "../../img/homepage/techtimeless.webp";
 
-
-
 export default class Projects extends Component {
 	render() {
 		return (
 			<div id="projects" className="projects pb-5">
 				<header className="text-center pt-5 mb-1 pb-3 text-uppercase small">
-					<h2>My Projects</h2>
+						<h2>My Projects</h2>		
 				</header>
 				<Container fluid className="projectBox">
 					<Row className="projectRow mx-0 px-0">

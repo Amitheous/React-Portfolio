@@ -19,6 +19,7 @@ export default class Contact extends Component {
 					<Form
 						id="form"
 						name="contact"
+						method="POST"
 						className="text-center py-3"
 						data-netlify="true"
 					>
