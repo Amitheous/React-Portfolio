@@ -34,17 +34,8 @@
 	text-shadow: 2px 2px #a9a9a9;
 	cursor: pointer;
 }
-
-.navbarToggler {
-	margin-right: 2rem;
-	color: var(--my-yellow);
-}
-
 .navbar-toggler:focus {
 	outline: none;
-}
-.navbar-toggler:active {
-	text-decoration: underline black solid;
 }
 
 /* TopBox */

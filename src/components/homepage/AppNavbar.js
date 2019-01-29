@@ -21,15 +21,11 @@ export default class AppNavbar extends Component {
 	}
 	render() {
 		return (
-			<Navbar className="navbar fixed-top" expand="md">
+			<Navbar dark className="navbar fixed-top" expand="md">
 				<NavbarBrand className="navbarBrand text-uppercase">
 					Amitheous
 				</NavbarBrand>
-				<NavbarToggler onClick={this.toggle}>
-					<span className="navbarToggler navbar-toggler-icon">
-						Menu
-					</span>
-				</NavbarToggler>
+				<NavbarToggler onClick={this.toggle} className='mr-3' />
 				<Collapse
 					isOpen={this.state.collapse}
 					className="text-uppercase"
