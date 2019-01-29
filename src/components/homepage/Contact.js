@@ -17,11 +17,10 @@ export default class Contact extends Component {
 					id="formCard"
 				>
 					<Form
-						id="form"
 						name="contact"
 						method="POST"
 						className="text-center py-3"
-						data-netlify="true"
+						netlify='true'
 					>
 						<FormGroup>
 							<Input
