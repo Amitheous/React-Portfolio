@@ -22,6 +22,7 @@ export default class Contact extends Component {
 						className="text-center py-3"
 						netlify='true'
 					>
+					<input type="hidden" name="form-name" value="contact" />
 						<FormGroup>
 							<Input
 								className="border-primary"
