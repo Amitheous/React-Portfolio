@@ -26,7 +26,7 @@ export default class AppNavbar extends Component {
 					Amitheous
 				</NavbarBrand>
 				<NavbarToggler onClick={this.toggle}>
-					<span className="navbarToggler navbar-toggler-icon border-0">
+					<span className="navbarToggler navbar-toggler-icon">
 						Menu
 					</span>
 				</NavbarToggler>
