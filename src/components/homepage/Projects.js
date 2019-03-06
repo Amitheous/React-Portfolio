@@ -51,7 +51,7 @@ export default class Projects extends Component {
 						<Project
 							title="Split Landing"
 							subtitle="A simple landing page split in two"
-							pageLink="split-landing.netlify.com"
+							pageLink="https://split-landing.netlify.com"
 							codeLink="https://github.com/Amitheous/Split-Landing"
 							img={
 								navigator.userAgent.indexOf("Chrome") !== -1
