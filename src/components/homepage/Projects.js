@@ -86,7 +86,7 @@ export default class Projects extends Component {
 						<Project
 							title="Original Porfolio"
 							subtitle="This was the portfolio I originally built!"
-							pageLink="https://techtimeless.ciom"
+							pageLink="https://techtimeless.com"
 							codeLink="https://github.com/Amitheous/PortfolioProject"
 							img={
 								navigator.userAgent.indexOf("Chrome") !== -1
