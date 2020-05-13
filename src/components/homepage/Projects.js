@@ -39,7 +39,7 @@ export default class Projects extends Component {
 						/>
 						<Project
 							title="Vue Weather"
-							subtitle="A weather application built using the Vue CDN and the Openweather API"
+							subtitle="A weather forecast application built using Vue and the Openweather API"
 							pageLink="https://vue-weather-app.netlify.com"
 							codeLink="https://github.com/Amitheous/vueWeather"
 							img={
